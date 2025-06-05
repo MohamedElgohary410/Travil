@@ -7,11 +7,13 @@ import {
     Button,
     Box,
     InputBase,
-    Stack
+    Stack,
+    Menu
 } from '@mui/material';
 import logo from '../../assets/images/group-6640.png';
 import flag from '../../assets/images/group-120.png';
 import bgimage from '../../assets/images/hot-air-balloon-flies-mountain-range-sunset.png';
+import MenuButtons from '../../customComponent/menuBar';
 
 const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -57,12 +59,7 @@ const Header = () => {
 
             {/* Hero Section with Background Image */}
             <Box sx={styles.heroContainer}>
-                <Box sx={styles.menuBar}>
-                    <Button variant="text" sx={styles.menuButtons}>Flights</Button>
-                    <Button variant="text" sx={styles.menuButtons}>Airport Transfer</Button>
-                    <Button variant="text" sx={styles.menuButtons}>Car Rentals</Button>
-                    <Button variant="text" sx={styles.menuButtons}>More</Button>
-                </Box>
+                <MenuButtons />
                 <Typography variant="h1" sx={styles.headerText}>
                     Discover unbeatable flight deals worldwide
                 </Typography>

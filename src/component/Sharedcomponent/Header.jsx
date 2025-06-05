@@ -14,6 +14,8 @@ import flag from '../../assets/images/group-120.png';
 import bgimage from '../../assets/images/hot-air-balloon-flies-mountain-range-sunset.png';
 
 const Header = () => {
+    const [isOpen, setIsOpen] = React.useState(false);
+
     return (
         <AppBar position="static" sx={styles.appBar} elevation={0}>
             <Container maxWidth="xl" sx={styles.container}>
@@ -157,7 +159,6 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'space-around',
         width: '40%',
-        padding: '0 20px',
         margin: '0 196px 35px 266px',
         padding: '16px 44px 0 33px',
         borderRadius: '13px',

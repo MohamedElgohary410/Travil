@@ -52,8 +52,10 @@ const Footer = () => {
                     <Typography sx={styles.heading}>Site / Currency</Typography>
                     <Box display="flex" flexDirection="column" gap={1.5}>
                         <Button variant="contained" sx={styles.button}>
-                            <Box component="img" src={flag} alt="Egypt Flag" sx={styles.flag} />
-                            EGYPT
+                            <Grid>
+                                <Box component="img" src={flag} alt="Egypt Flag" sx={styles.flag} />
+                                EGYPT
+                            </Grid>
                             <ArrowDropDownIcon sx={styles.dropDownIcon} />
                         </Button>
 

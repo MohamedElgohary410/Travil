@@ -6,9 +6,7 @@ import {
     Typography,
     Button,
     Box,
-    InputBase,
-    Stack,
-    Menu
+    InputBase
 } from '@mui/material';
 import logo from '../../assets/images/group-6640.png';
 import flag from '../../assets/images/group-120.png';
@@ -16,7 +14,6 @@ import bgimage from '../../assets/images/hot-air-balloon-flies-mountain-range-su
 import MenuButtons from '../../customComponent/menuBar';
 
 const Header = () => {
-    const [isOpen, setIsOpen] = React.useState(false);
 
     return (
         <AppBar position="static" sx={styles.appBar} elevation={0}>
